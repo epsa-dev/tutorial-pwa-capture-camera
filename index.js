@@ -20,7 +20,8 @@ const saveFile = async (file) =>
   new Promise((resolve, reject) =>
     fs.writeFile('./src/uploads/' + file.originalname, file.buffer, (err) =>
       err ? reject('An error occurred: ' + err.message)
-          : resolve({ uploaded: true })));
+          : resolve({ uploaded: true })
+          ));
 
 // Endpoint Upload.
 router.post(
@@ -34,7 +35,9 @@ router.post(
     
     // Try create local file with content.
     try {
+        console.log("Subiendo: "+JSON.stringify(ctx.request.file));
       ctx.body = await saveFile(ctx.request.file);
+      console.log("Arriba: "+JSON.stringify(ctx.request.file)); 
     } catch (err) {
       console.log(err);
       ctx.throw(err, 500);
