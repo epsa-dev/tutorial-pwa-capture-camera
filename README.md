@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/JoseJPR/tutorial-pwa-capture-camera)
+
 <p align="center">
   <img src="./assets/banner.png" width="600" />
 </p>
@@ -30,7 +32,7 @@ In this tutorial I show you how you can create a PWA and how you can capture pho
 
 The following video shows how yo can launch this project and test it.
 
-[![Video](./assets/youtube.svg)](WIP)
+[![Video](./assets/youtube.svg)](https://youtu.be/o_SrnMTI-x8)
 
 ## ⛅️ Develop in the Cloud
 
